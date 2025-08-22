@@ -4,25 +4,21 @@ export default function Home() {
   return (
     <div className="container-fluid p-0">
       {/* Hero Section */}
-      <div className="position-relative">
+      <div className="w-100">
         <img
           src="/images/final.jpg"
           alt="Yuvatma"
           className="w-100"
-          style={{ height: "100%", width: "100%", objectFit: "cover" }}
+          style={{ height: "auto", width: "100%", objectFit: "cover" }}
         />
+      </div>
 
-        {/* Text for Desktop */}
-        <div className="position-absolute top-50 end-0 translate-middle-y text-white px-5 text-end d-none d-md-block">
-          <h1 className="display-5 fw-bold">Welcome to Yuvatma</h1>
-          <p className="lead">The Youth Wing of Shri Uttaradi Matha</p>
-        </div>
-
-        {/* Text for Mobile */}
-        <div className="position-absolute top-50 start-50 translate-middle text-white text-center d-block d-md-none px-3">
-          <h2 className="fw-bold">Welcome to Yuvatma</h2>
-          <p className="small">The Youth Wing of Shri Uttaradi Matha</p>
-        </div>
+      {}
+      <div className="text-center py-4 bg-light">
+        <h1 className="display-5 fw-bold text-dark">Welcome to Yuvatma</h1>
+        <p className="lead text-secondary">
+          The Youth Wing of Shri Uttaradi Matha
+        </p>
       </div>
 
       {/* Cards Section */}
