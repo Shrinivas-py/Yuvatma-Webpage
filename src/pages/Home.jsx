@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <div className="container-fluid p-0">
-      {}
+      {/* Hero Section */}
       <div className="position-relative">
         <img
           src="/images/final.jpg"
@@ -12,14 +12,20 @@ export default function Home() {
           style={{ height: "100%", width: "100%", objectFit: "cover" }}
         />
 
-        {}
-        <div className="position-absolute top-50 translate-middle-y text-white px-3 px-md-5 text-center text-md-end w-100">
+        {/* Text for Desktop */}
+        <div className="position-absolute top-50 end-0 translate-middle-y text-white px-5 text-end d-none d-md-block">
           <h1 className="display-5 fw-bold">Welcome to Yuvatma</h1>
           <p className="lead">The Youth Wing of Shri Uttaradi Matha</p>
         </div>
+
+        {/* Text for Mobile */}
+        <div className="position-absolute top-50 start-50 translate-middle text-white text-center d-block d-md-none px-3">
+          <h2 className="fw-bold">Welcome to Yuvatma</h2>
+          <p className="small">The Youth Wing of Shri Uttaradi Matha</p>
+        </div>
       </div>
 
-      {}
+      {/* Cards Section */}
       <div className="container my-5">
         <div className="row g-4 justify-content-center">
           <div className="col-lg-3 col-md-4 col-sm-6 col-12">
